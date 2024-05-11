@@ -37,13 +37,13 @@ function flight_in_list_found(list, item) {
   
   if (item) {
     if (item !== "") {
-      // for (i = 0; i < list.length; i++) {
-      //   if (list[i].Show.toLowerCase() === item) 
-      //   {          
-      //     $('.rt-btn.rt-btn-next').show(); 
-      //     return true;
-      //   }
-      // }
+      for (i = 0; i < list.length; i++) {
+        if (list[i].Show.toLowerCase() === item) 
+        {          
+          $('.rt-btn.rt-btn-next').show(); 
+          return true;
+        }
+      }
     $('.rt-btn.rt-btn-next').show(); 
     return true;
 
